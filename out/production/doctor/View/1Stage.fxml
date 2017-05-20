@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="243.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.FirstStageController">
+   <top>
+      <Pane prefHeight="243.0" prefWidth="600.0" style="-fx-background-color: #535261;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="fileName" focusColor="WHITE" layoutX="44.0" layoutY="95.0" prefHeight="25.0" prefWidth="342.0" promptText="File Name" unFocusColor="WHITE">
+               <padding>
+                  <Insets top="100.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton buttonType="RAISED" cache="true" layoutX="406.0" layoutY="95.0" onAction="#selectFile" ripplerFill="#414143" style="-fx-background-color: #607D8B;" text="Select File" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="504.0" layoutY="95.0" onAction="#scanButton" ripplerFill="#ff0101" style="-fx-background-color: #607D8B;" text="Scan File" textFill="WHITE" />
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

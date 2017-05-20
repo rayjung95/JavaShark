@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.BarChartController">
+   <children>
+      <BarChart fx:id="barChart" alternativeColumnFillVisible="true" alternativeRowFillVisible="false" legendVisible="false" prefHeight="561.0" prefWidth="900.0" title="Source IP VS Occurence Times">
+        <xAxis>
+          <CategoryAxis prefHeight="0.0" prefWidth="841.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <HBox alignment="CENTER" layoutX="1.0" layoutY="652.0" prefHeight="50.0" prefWidth="900.0" spacing="20.0">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#saveAsPng" prefHeight="30.0" prefWidth="160.0" ripplerFill="#b91919" style="-fx-background-color: #2196F3;" text="Save Chart As..." textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="closeButton" buttonType="RAISED" onAction="#doExit" prefHeight="30.0" prefWidth="150.0" ripplerFill="#be1818" style="-fx-background-color: #2196F3;" text="Close" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

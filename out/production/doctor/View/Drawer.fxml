@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="250.0" style="-fx-background-color: #414143;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="200.0" fitWidth="250.0" pickOnBounds="true">
+         <image>
+            <Image url="@../wpid-wp-1427993079089.png" />
+         </image>
+      </ImageView>
+      <JFXButton accessibleText="Button1" buttonType="RAISED" prefHeight="100.0" prefWidth="220.0" ripplerFill="WHITE" style="-fx-background-color: #535261;" text="Source IP" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="15.0" top="50.0" />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton accessibleText="Button2" buttonType="RAISED" prefHeight="100.0" prefWidth="220.0" ripplerFill="WHITE" style="-fx-background-color: #535261;" text="Destination IP" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="15.0" top="50.0" />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton accessibleText="Button3" buttonType="RAISED" prefHeight="100.0" prefWidth="220.0" style="-fx-background-color: #535261;" text="Network Traffic" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="15.0" top="50.0" />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton accessibleText="Button4" buttonType="RAISED" prefHeight="100.0" prefWidth="220.0" style="-fx-background-color: #535261;" text="Comparing Traffic With New File" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="15.0" top="50.0" />
+         </VBox.margin>
+      </JFXButton>
+   </children>
+</VBox>
